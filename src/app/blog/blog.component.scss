@@ -69,10 +69,6 @@
   }
 
   .card{
-    // display: flex;
-    // justify-content: center;
-    // flex-wrap: wrap;
-    // max-width: 180px;
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-column-gap: 50px;
