@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="row infoHeader">
+    <div>
+       <p>
+         <strong><i class="fa fa-phone"></i></strong> +91 123 456 78 90 &nbsp;&nbsp;
+         <strong><i class="fa fa-envelope"></i>&nbsp;</strong> <a style="color:white !important ;" href="mailto:#">demo@dharstec.com</a>
+     </p>
+    </div>
+   <div class="social-bar">
+     <a href="#"><i class="fa fa-facebook"></i></a>
+     <a href="#"><i class="fa fa-twitter"></i></a>
+     <a href="#"><i class="fa fa-instagram"></i></a>
+     <a href="#"><i class="fa fa-envelope"></i></a>
+     <a href="#"><i class="fa fa-phone"></i></a>
+   </div>
+  </div>
+ <div class="headerAlign">
+     <h1>Vio memorial</h1>
+ 
+     <nav class="navbar">
+      <ul>
+        <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+          <a routerLink="/home">Home</a>
+        </li>
+        <li class="submenu" routerLinkActive="active">
+          <a routerLink="/campus">Campus</a>
+          <!-- <ul class="submenu-content">
+            <li><a routerLink="/campus/facilities">Facilities</a></li>
+            <li><a routerLink="/campus/gallery">Gallery</a></li>
+          </ul> -->
+        </li>
+        <li class="submenu">
+          <a>Curriculum</a>
+          <ul class="submenu-content">
+            <li><a routerLink="/curriculum/subjects">Subjects</a></li>
+            <li><a routerLink="/curriculum/teachers">Teachers</a></li>
+          </ul>
+        </li>
+        <li class="submenu">
+          <a>Admission</a>
+          <ul class="submenu-content">
+            <li><a routerLink="/admission/process">Process</a></li>
+            <li><a routerLink="/admission/requirements">Requirements</a></li>
+          </ul>
+        </li>
+        <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+          <a routerLink="/blog">Blog</a>
+        </li>
+        <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+          <a routerLink="/contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <router-outlet></router-outlet>
+</div>
+
+
+
