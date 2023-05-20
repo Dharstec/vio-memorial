@@ -1,0 +1,82 @@
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <h2 class="text-center">Academics</h2>
+        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at felis sit amet odio ultricies gravida.</p>
+      </div>
+    </div>
+    
+    <table class="table table-bordered" style="width: 100%;padding: 0px 150px;">
+        <thead>
+          <tr>
+            <th style="border: 1px solid;" scope="col">Classes</th>
+            <th style="border: 1px solid;" scope="col">Subjects</th>
+          </tr>
+        </thead>
+        <tbody class="text-center">
+          <tr>
+            <th style="border: 1px solid;" scope="row">1</th>
+            <td style="border: 1px solid;">Mark</td>
+          </tr>
+          <tr>
+            <th style="border: 1px solid;" scope="row">2</th>
+            <td style="border: 1px solid;">Jacob</td>
+          </tr>
+          <tr>
+            <th style="border: 1px solid;" scope="row">3</th>
+            <td style="border: 1px solid;">Larry</td>
+          </tr>
+        </tbody>
+      </table>
+    
+    
+    <div class="row">
+      <div class="col">
+        <h2 class="text-center">Features</h2>
+        <div class="features">
+          <div class="feature">
+            <i class="fa fa-flask"></i>
+            <h3>Laboratory</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="feature">
+            <i class="fa fa-book"></i>
+            <h3>Library</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="feature">
+            <i class="fa fa-futbol-o"></i>
+            <h3>Sports Facilities</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="feature">
+            <i class="fa fa-music"></i>
+            <h3>Music Classes</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2 class="text-center">Extra Curriculum</h2>
+        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at felis sit amet odio ultricies gravida.</p>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col">
+        <h2 class="text-center">Gallery</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item" *ngFor="let image of imageObject">
+            <img [src]="image.image" alt="Image">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
