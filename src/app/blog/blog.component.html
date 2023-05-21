@@ -1,3 +1,4 @@
+<app-home></app-home>
 <div class="container">
     <div class="row">
       <div class="col">
@@ -6,9 +7,9 @@
       </div>
     </div>
     
-    <div class="row">
+    <div class="row" style="display: flex;">
       <div class="col card">
-        <mat-card class="example-card" *ngFor="let image of imageObject" style="background-color: #586c90;" >
+        <mat-card class="example-card" *ngFor="let image of imageObject" style="background-color: #586c90;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;" >
             <mat-card-header class="gallery-item">
                 <img mat-card-image [src]="image.image" alt="Image">
                 <!-- <div mat-card-avatar class="example-header-image"></div> -->
@@ -22,16 +23,38 @@
                 bred for hunting.
                 </p>
             </mat-card-content>
-            <mat-card-actions>
+            <mat-card-actions style="font-weight: 700;">
                 <button mat-button>Read more</button>
+                <i class="fa fa-solid fa-angle-right r-arrow" ></i>
             </mat-card-actions>
         </mat-card>
-        <!-- <h2 class="text-center">Gallery</h2>
-        <div class="gallery-grid">
-          <div class="gallery-item" *ngFor="let image of imageObject">
-            <img [src]="image.image" alt="Image">
-          </div>
-        </div> -->
+      </div>
+      <div class="left-panel">
+        <mat-card class="example-card" style="background-color: #586c90;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;" >
+            <mat-card-header class="gallery-item">
+                <!-- <img mat-card-image [src]="image.image" alt="Image"> -->
+                <!-- <div mat-card-avatar class="example-header-image"></div> -->
+                <mat-card-title style="display: flex;"><h3>Categories</h3></mat-card-title>
+                <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
+            </mat-card-header>
+            <mat-card-content>
+                <p class="left-panel-list"><i class="fa fa-solid fa-angle-right r-arrow" ></i>Academics</p>
+                <p class="left-panel-list"><i class="fa fa-solid fa-angle-right r-arrow" ></i>CBSE Board</p>
+                <p class="left-panel-list"><i class="fa fa-solid fa-angle-right r-arrow" ></i>Child Learning</p>
+                <p class="left-panel-list"><i class="fa fa-solid fa-angle-right r-arrow" ></i>Children's Literature</p>
+                <p class="left-panel-list"><i class="fa fa-solid fa-angle-right r-arrow" ></i>Creativity</p>
+                <p class="left-panel-list"><i class="fa fa-solid fa-angle-right r-arrow" ></i>Days and Festival</p>
+                <p class="left-panel-list"><i class="fa fa-solid fa-angle-right r-arrow" ></i>Entertainment</p>
+                <p class="left-panel-list"><i class="fa fa-solid fa-angle-right r-arrow" ></i>Health and Nutrition</p>
+                <p class="left-panel-list"><i class="fa fa-solid fa-angle-right r-arrow" ></i>Maths</p>
+                <p class="left-panel-list"><i class="fa fa-solid fa-angle-right r-arrow" ></i>Parents Corner</p>
+                <p class="left-panel-list"><i class="fa fa-solid fa-angle-right r-arrow" ></i>QnA</p>
+                <p class="left-panel-list"><i class="fa fa-solid fa-angle-right r-arrow" ></i>Recommended</p>
+                <p class="left-panel-list"><i class="fa fa-solid fa-angle-right r-arrow" ></i>Social Skills</p>
+                <p class="left-panel-list"><i class="fa fa-solid fa-angle-right r-arrow" ></i>Sports</p>
+                 <p class="left-panel-list"><i class="fa fa-solid fa-angle-right r-arrow"></i>Teacher's Corner</p>
+            </mat-card-content>
+        </mat-card>
       </div>
     </div>
     

@@ -76,4 +76,19 @@
     background-color: #2196F3;
     padding: 10px;
   }
+  .left-panel{
+    background-color: #2196F3;
+    padding: 12px;
+    width: 100%;
+   .left-panel-list{
+    &:hover {
+        color: #fff;
+        cursor: pointer;
+   }
+   } 
+  }
+  .r-arrow{
+    color: #000;
+    margin-right: 8px;
+  }
   
