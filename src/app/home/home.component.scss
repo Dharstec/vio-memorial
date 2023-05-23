@@ -8,3 +8,11 @@
 //     width: 100%;
 //     height: auto;
 //   }
+::ng-deep .ng-image-slider .ng-image-slider-container .main .main-inner .img-div img, .ng-image-slider .ng-image-slider-container .main .main-inner .img-div video{
+    position: absolute !important;
+    margin: auto !important;
+    height: 100% !important;
+    width: 70% !important;
+    inset: 0;
+    border-radius: 5px
+  }
