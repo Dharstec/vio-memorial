@@ -1,5 +1,5 @@
 .container {
-    background-color: #586c90;
+    background-color: #fff;
     max-width: 1400px;
     margin: 0 auto;
   }
@@ -73,16 +73,22 @@
     grid-template-columns: auto auto auto auto;
     grid-column-gap: 50px;
     grid-row-gap: 10px;
-    background-color: #2196F3;
+    background-color: #fff;
     padding: 10px;
   }
+  .read_more{
+    font-weight: 700;
+    &:hover{
+        color: #023b6d;
+    }
+  }
   .left-panel{
-    background-color: #2196F3;
+    background-color: #fff;
     padding: 12px;
     width: 100%;
    .left-panel-list{
     &:hover {
-        color: #fff;
+        color: #023b6d;
         cursor: pointer;
    }
    } 

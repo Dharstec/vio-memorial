@@ -1,7 +1,17 @@
 .container {
-    background-color: #586c90;
+    background-color: #fff;
     max-width: 1400px;
     margin: 0 auto;
+  }
+
+  .example-container {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+  }
+  
+  .example-container > * {
+    width: 100%;
   }
   
   .row {
@@ -63,4 +73,37 @@
     font-size: 14px;
     color: rgb(73, 73, 73);
   }
-  
+  //mat input
+
+//   ::ng-deep.mat-mdc-text-field-wrapper {
+//     border: 1px solid;
+//     padding: 8px !important;
+//     border-bottom: 0px;
+//   }
+//   ::ng-deep .mdc-text-field--focused {
+//     border-bottom: 0px;
+//   }
+
+.flex_form{
+    display: flex;
+    .input_space{
+        // margin-right: 12px;
+        padding: 12px;
+        width: 50%;
+        .input{
+            width: 100%;
+            height: 24px;
+            &.inp_box_h{
+                height: 50px;
+            }
+        }
+        .flex-custom{
+            display: flex !important;
+            margin-bottom: 8px;
+        }
+    }
+}
+
+.flex-custom{
+    display: flex !important;
+}

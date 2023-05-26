@@ -1,10 +1,187 @@
-<div class="container">
+<!-- <div class="container">
     <div class="row">
       <div class="col">
         <h2 class="text-center">Admission</h2>
         <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at felis sit amet odio ultricies gravida.</p>
       </div>
     </div>
+    
+    <div class="row">
+      <div class="col">
+        <h2 class="text-center">Gallery</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item" *ngFor="let image of imageObject">
+            <img [src]="image.image" alt="Image">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="row">
+      <div class="col">
+        <h2 class="text-center">Features</h2>
+        <div class="features">
+          <div class="feature">
+            <i class="fa fa-flask"></i>
+            <h3>Laboratory</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="feature">
+            <i class="fa fa-book"></i>
+            <h3>Library</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="feature">
+            <i class="fa fa-futbol-o"></i>
+            <h3>Sports Facilities</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="feature">
+            <i class="fa fa-music"></i>
+            <h3>Music Classes</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2 class="text-center">Application form</h2>
+        <p class="text-center">Vio memorial Online Admission Form Fee Structure Enquiry Form</p>
+      </div>
+    </div>
+    <div>
+        <form class="example-container" [formGroup]="applicationForm">
+            <div class="flex_form">
+                <div class="input_space" >
+                    <mat-label class="flex-custom">Select Academic Year <span class="required"> *</span></mat-label>
+                    <mat-form-field class="input" appearance="outline">
+                        <mat-select  formControlName="color">
+                          <mat-option value="22-23">2022-2023</mat-option>
+                          <mat-option value="23-24">-2023-2024</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                  
+                    <!-- <input class="input" type="text"  name="Search"
+                      matInput formControlName="color" maxlength="50" required> -->
+                    <!-- <mat-hint class="hintalign">{{applicationForm.get('color').value?.length || 0}}/50
+                    </mat-hint> -->
+                    <!-- <mat-error *ngIf="submitted && form.get('actualPrice')?.errors?.required">{{'Actual price is required'}}</mat-error> -->
+                </div>
+                <div class="input_space" >
+                    <mat-label class="flex-custom">Enter 10 digit phone number <span class="required"> *</span></mat-label>
+                    <input class="input" type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');" name="Search"
+                      matInput formControlName="color" maxlength="50" required>
+                </div>
+              </div>
+              <div class="flex_form">
+                <div class="input_space" >
+                    <mat-label class="flex-custom">City<span class="required"> *</span></mat-label>
+                    <input class="input" type="text"  name="Search"
+                      matInput formControlName="color" maxlength="50" required>
+                </div>
+                <div class="input_space" >
+                    <mat-label class="flex-custom">Student Name <span class="required"> *</span></mat-label>
+                    <input class="input" type="text"  name="Search"
+                      matInput formControlName="color" maxlength="50" required>
+                </div>
+              </div>
+              <div class="flex_form">
+                <div class="input_space" >
+                    <mat-label class="flex-custom">Campus <span class="required"> *</span></mat-label>
+                    <input class="input" type="text"name="Search"
+                      matInput formControlName="color" maxlength="50" required>
+                </div>
+                <div class="input_space" >
+                    <mat-label class="flex-custom">Grade<span class="required"> *</span></mat-label>
+                    <input class="input" type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');" name="Search"
+                      matInput formControlName="color" maxlength="50" required>
+                </div>
+              </div>
+              <div class="flex_form">
+                <div class="input_space" >
+                    <mat-label class="flex-custom">Date Of Birth <span class="required"> *</span></mat-label>
+                    <input class="input" type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');" name="Search"
+                      matInput formControlName="color" maxlength="50" required>
+                </div>
+                <div class="input_space" >
+                    <mat-label class="flex-custom">Gender<span class="required"> *</span></mat-label>
+                    <mat-radio-group formControlName="color">
+                      <mat-radio-button value="male">Male</mat-radio-button>
+                      <mat-radio-button value="female">Female</mat-radio-button>
+                      <mat-radio-button value="trans">Transgender</mat-radio-button>
+                    </mat-radio-group>
+                </div>
+              </div>
+              <div class="flex_form">
+                <div class="input_space" >
+                    <mat-label class="flex-custom">Mother Name<span class="required"> *</span></mat-label>
+                    <input class="input" type="text" name="Search"
+                      matInput formControlName="color" maxlength="50" required>
+                </div>
+                <div class="input_space" >
+                    <mat-label class="flex-custom">Father Name<span class="required"> *</span></mat-label>
+                    <input class="input" type="text" name="Search"
+                      matInput formControlName="color" maxlength="50" required>
+                </div>
+              </div>
+              <div class="flex_form">
+                <div class="input_space" >
+                    <mat-label class="flex-custom">Mother Contact No. <span class="required"> *</span></mat-label>
+                    <input class="input" type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');" name="Search"
+                      matInput formControlName="color" maxlength="50" required>
+                </div>
+                <div class="input_space" >
+                    <mat-label class="flex-custom">Father Contact No. <span class="required"> *</span></mat-label>
+                    <input class="input" type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');" name="Search"
+                      matInput formControlName="color" maxlength="50" required>
+                </div>
+              </div>
+              <div class="flex_form">
+                <div class="input_space" >
+                    <mat-label class="flex-custom">Mother Email Id <span class="required"> *</span></mat-label>
+                    <input class="input" type="text"  name="Search"
+                      matInput formControlName="color" maxlength="50" required>
+                </div>
+                <div class="input_space" >
+                    <mat-label class="flex-custom">Father Email Id <span class="required"> *</span></mat-label>
+                    <input class="input" type="text" name="Search"
+                      matInput formControlName="color" maxlength="50" required>
+                </div>
+              </div>
+              <div class="flex_form">
+                <div class="input_space" style="width:100%" >
+                    <mat-label class="flex-custom" style="width:100%">Address<span class="required"> *</span></mat-label>
+                    <input class="input inp_box_h" type="text"  name="Search"
+                      matInput formControlName="color" maxlength="50" required>
+                </div>
+              </div>
+            <!-- <div style="display: flex;">
+                
+                <mat-form-field style="margin-right: 12px;" appearance="outline">
+                    <mat-select placeholder="Color" formControlName="color">
+                      <mat-option value="primary">Primary</mat-option>
+                      <mat-option value="accent">Accent</mat-option>
+                      <mat-option value="warn">Warn</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                
+                  <mat-form-field appearance="outline">
+                    <input matInput type="number" placeholder="Font size (px)" formControlName="fontSize" min="10"> -->
+                    <!-- <mat-error *ngIf="applicationForm.get('fontSize')?.invalid">Min size: 10px</mat-error> -->
+                  <!-- </mat-form-field>
+            </div>
+            <mat-form-field>
+                <input matInput placeholder="Enter your email" formControlName="email" required> -->
+                <!-- <mat-error *ngIf="applicationForm.get('email')?.invalid">{{getErrorMessage()}}</mat-error> -->
+              <!-- </mat-form-field> -->
+          </form>
+    </div>
+  
     
     <div class="row">
       <div class="col">

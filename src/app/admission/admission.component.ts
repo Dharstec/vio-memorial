@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-admission',
@@ -30,4 +31,26 @@ export class AdmissionComponent {
       thumbImage: 'https://sanjayv.github.io/ng-image-slider/contents/assets/img/slider/2.jpg',
       title: 'Example two with title.'
     }];
+
+    applicationForm: FormGroup;
+
+    constructor(private fb: FormBuilder) {
+    }
+
+    ngOnInit(): void {
+      this.applicationForm = this.fb.group({
+        'color': '',
+        'fontSize': ['', Validators.min(10)],
+        "email":['', [Validators.required, Validators.email]]
+      });
+
+    }
+
+    getErrorMessage() {
+      console.log(this.applicationForm.value)
+      return this.applicationForm.value.email.hasError('required') ? 'You must enter a value' :
+          this.applicationForm.value.email.hasError('email') ? 'Not a valid email' :
+              '';
+    }
+  
 }
