@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { NgImageSliderModule } from 'ng-image-slider';
+import { CommonModule, TitleCasePipe } from '@angular/common';
+import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,7 +22,10 @@ import { AngularMaterialModule}  from './angular-material/angular-material.modul
   imports: [
     BrowserModule,
     AppRoutingModule,RouterModule,NgImageSliderModule, BrowserAnimationsModule,
-    AngularMaterialModule
+    AngularMaterialModule,
+    CommonModule,
+    TitleCasePipe,
+    FormsModule,ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
