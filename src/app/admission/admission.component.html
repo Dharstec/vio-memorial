@@ -49,6 +49,33 @@
 
   <div class="container">
     <div class="row">
+        <div class="col">
+          <h2 class="text-center">Admission Procedure</h2>
+          <p class="text-center">5 Effortless Steps to Admission</p>
+        </div>
+      </div>
+    <div>
+        <mat-horizontal-stepper  #stepper="matHorizontalStepper" style="pointer-events: none;">
+            <mat-step>
+                <ng-template matStepLabel>Contact Us</ng-template>
+            </mat-step>
+            <mat-step>
+                <ng-template matStepLabel>Campus Vist</ng-template>
+            </mat-step>
+            <mat-step>
+                <ng-template matStepLabel>Application Form</ng-template>
+            </mat-step>
+            <mat-step>
+                <ng-template matStepLabel>Submit Document</ng-template>
+            </mat-step>
+            <mat-step>
+                <ng-template matStepLabel>Generate Enrollment No.</ng-template>
+            </mat-step>
+    
+     
+          </mat-horizontal-stepper>
+    </div>
+    <div class="row">
       <div class="col">
         <h2 class="text-center">Application form</h2>
         <p class="text-center">Vio memorial Online Admission Form Fee Structure Enquiry Form</p>
@@ -182,17 +209,8 @@
           </form>
     </div>
   
-    
-    <div class="row">
-      <div class="col">
-        <h2 class="text-center">Gallery</h2>
-        <div class="gallery-grid">
-          <div class="gallery-item" *ngFor="let image of imageObject">
-            <img [src]="image.image" alt="Image">
-          </div>
-        </div>
-      </div>
-    </div>
+
+  
     
     
     <div class="row">

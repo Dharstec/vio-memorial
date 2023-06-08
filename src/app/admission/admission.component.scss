@@ -107,3 +107,13 @@
 .flex-custom{
     display: flex !important;
 }
+::ng-deep .mat-horizontal-stepper-header .mat-step-icon {
+    background-color: #023b6d !important;
+    color: #fff;
+}
+
+::ng-deep .mat-step-header{
+    background: aliceblue;
+    border: 1px solid;
+    border-radius: 34px;
+}
