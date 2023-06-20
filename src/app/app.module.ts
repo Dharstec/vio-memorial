@@ -13,11 +13,12 @@ import { BlogComponent } from './blog/blog.component';
 import { AdmissionComponent } from './admission/admission.component';
 import { CurriculumComponent } from './curriculum/curriculum.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AngularMaterialModule}  from './angular-material/angular-material.module'
+import { AngularMaterialModule}  from './angular-material/angular-material.module';
+import { FooterComponent } from './footer/footer.component'
 
 @NgModule({
   declarations: [
-    AppComponent,HomeComponent,CampusComponent, BlogComponent, AdmissionComponent, CurriculumComponent
+    AppComponent,HomeComponent,CampusComponent, BlogComponent, AdmissionComponent, CurriculumComponent, FooterComponent
   ],
   imports: [
     BrowserModule,

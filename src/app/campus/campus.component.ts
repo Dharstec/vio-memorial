@@ -29,5 +29,12 @@ export class CampusComponent {
       image: 'https://sanjayv.github.io/ng-image-slider/contents/assets/img/slider/2.jpg',
       thumbImage: 'https://sanjayv.github.io/ng-image-slider/contents/assets/img/slider/2.jpg',
       title: 'Example two with title.'
-    }];
+    },{
+      image: 'https://sanjayv.github.io/ng-image-slider/contents/assets/img/slider/9.jpg',
+      thumbImage: 'https://sanjayv.github.io/ng-image-slider/contents/assets/img/slider/9.jpg'
+    }, {
+      image: 'https://sanjayv.github.io/ng-image-slider/contents/assets/img/slider/4.jpg',
+      thumbImage: 'https://sanjayv.github.io/ng-image-slider/contents/assets/img/slider/4.jpg',
+      title: 'Example with title.'
+    },];
 }
